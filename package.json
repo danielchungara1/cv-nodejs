@@ -1,0 +1,23 @@
+{
+  "name": "cv-nodejs",
+  "version": "1.0.0",
+  "description": "cv-nodejs",
+  "main": "webserver/webserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node webserver/webserver.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielchungara1/cv-nodejs.git"
+  },
+  "author": "danielchungara1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielchungara1/cv-nodejs/issues"
+  },
+  "homepage": "https://github.com/danielchungara1/cv-nodejs#readme",
+  "engines": {
+    "node":"8.12.0"
+  }
+}
