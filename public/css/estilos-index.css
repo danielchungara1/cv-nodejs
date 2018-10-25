@@ -1,5 +1,6 @@
 /* 
-*Color principal: #131A22
+*Color fondo azul: #131A22
+*Color verde: #90C53F
 */
 *{
     box-sizing: border-box;
@@ -20,11 +21,60 @@ header,nav,footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("/public/img/banner/cv-lupa.jpg");    
+    background-image: url("/public/img/cv-lupa.jpg");    
     background-size: contain;
     color: transparent;
 }
 main{
     padding: 1em;
     text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0;
+}
+header > img{
+    width: 3em;
+}
+header >form{
+    padding: 1em;
+    width: 100%;   
+}
+header > form > *{
+    padding: 0.4em;
+    border: none;
+}
+
+header > form > .cuadro-busqueda{
+    width: 50%;
+    
+}
+header > form > .submit{
+    cursor: pointer;    
+    background-color: #90C53F;
+    color: #131A22;
+}
+
+nav{
+    display: flex;    
+    padding-top :0.5em;
+    padding-bottom :0.5em;
+    justify-content: stretch;
+    
+}
+nav > a:link,a:visited,a:hover,a:active{
+    color: white;
+    text-decoration: none;    
+}
+nav > a:hover{
+    background-color: #90C53F;
+    color: #131A22;
+}
+
+nav > a{
+    padding: 1em;    
 }
