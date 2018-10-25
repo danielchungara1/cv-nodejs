@@ -13,8 +13,31 @@ modulehttp.createServer(function(req, res){
             res.write(data);
             return res.end();
         })        
-    }else{
+    }else if(req.url=="/public/css/estilos-index.css"){
+        modulefs.readFile("public/css/estilos-index.css",function(err, data){
+            if (err) throw err;
+            res.writeHead(200,{'Content-Type':'text/css'});
+            res.write(data);
+            return res.end();
+        })
+    }else if(req.url=="/public/img/banner/cv-lupa.jpg"){
+        modulefs.readFile("public/img/banner/cv-lupa.jpg",function(err, data){
+            if (err) throw err;
+            res.writeHead(200,{'Content-Type':'text/image/jpg'});
+            res.write(data);
+            return res.end();
+        })
+    }else if(req.url=="/favicon.ico"){
+        modulefs.readFile("public/img/logo.ico",function(err, data){
+            if (err) throw err;
+            res.writeHead(200,{'Content-Type':'image/ico'});
+            res.write(data);
+            return res.end();
+        })
+    }        
+    else{
         res.writeHead(404,{'Content-Type':'text/html'});
-        res.end("RECURSO NO ENCONTRADO");
+        res.end("RECURSO NO ENCONTRADO: " + req.url);
+        console.log("RECURSO NO ENCONTRADO" + req.url);
     }      
 }).listen(port);

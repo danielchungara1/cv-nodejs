@@ -1,0 +1,30 @@
+/* 
+*Color principal: #131A22
+*/
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    margin :0;
+    padding:0;
+    height: 100%;
+}
+header,nav,footer{
+    background-color: #131A22;
+    padding: 1em;     
+    color: white;
+}
+.carusel{
+    height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/public/img/banner/cv-lupa.jpg");    
+    background-size: contain;
+    color: transparent;
+}
+main{
+    padding: 1em;
+    text-align: center;
+}
