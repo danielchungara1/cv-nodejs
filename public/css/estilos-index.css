@@ -66,6 +66,7 @@ nav{
     padding-top :0.5em;
     padding-bottom :0.5em;
     justify-content: stretch;
+    flex-wrap: wrap;
     
 }
 nav > a:link,
@@ -98,7 +99,7 @@ footer{
  padding: 0.5em;
 }
 
-#icon-facebook, #icon-google, #icon-linkedin,#icon-twiter, #icon-youtube{
+#icon-facebook, #icon-google, #icon-linkedin,#icon-twiter, #icon-youtube,#icon-github{
     background-image: url("/public/img/sprite-social-media.png");
         width: 30px;
         height: 30px;        
@@ -122,6 +123,12 @@ footer{
 #icon-youtube{
     background-position-x: -320px ;
 }
+#icon-github{
+    background-image: url("/public/img/git-logo-grey.png");
+     background-size: 16px;
+    background-position: center center;
+    
+}
 
 main{
     width: 95%;
@@ -132,6 +139,7 @@ main{
 
 main > .container{
     display: flex;
+
 
 }
 
@@ -159,3 +167,41 @@ main > .container img{
     
     
 }
+
+/* Responsive */
+
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    main > .container{
+        flex-direction: column-reverse;
+    }
+
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    main > .container{
+        flex-direction: column-reverse;
+    }
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    main > .container{
+        flex-direction: column-reverse;
+    }
+  }
