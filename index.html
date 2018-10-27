@@ -5,84 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>curriculum vitae con tecnología nodejs</title>
-    <link rel="stylesheet" href="/public/css/estilos-index.css">
+    
+    <link rel="stylesheet" href="/public/css/estilos-comunes.css">
+    <link rel="stylesheet" href="/public/css/estilos-main-index.css">
+
+    <script src="/public/js/include-html.js"></script>
 
 </head>
 
 <body>
 
-    <header>
-        <!-- LOGO Y BUSQUEDA -->
-        <img src="/public/img/logo-claro.png" alt="logo">
-        <form action="">
-            <input type="text" class="cuadro-busqueda">
-            <input type="submit" value="search" class="submit">
-        </form>
-    </header>
+    <!-- header include -->
+    <div w3-include-html="/public/html/header.html"></div>
+    
+    <!-- nav include -->
+    <div w3-include-html="/public/html/nav.html"></div>
 
-    <nav>
-        <!-- BARRA NAVEGACION -->
-        <a href="#">Personal</a>
-        <a href="#">Educacion</a>
-        <a href="#">Experiencia</a>
-        <a href="#">Idiomas</a>
-        <a href="#">Herramientas</a>
-        <a href="#">Objetivos</a>
-    </nav>
+    <!-- main index include -->
+    <div w3-include-html="/public/html/main-index.html"></div>
 
-    <div class="carusel">CARUSEL IMAGENES</div>
+    <!-- footer include -->
+    <div w3-include-html="/public/html/footer.html"></div>
 
-    <main>
-        <!-- CONTENIDO PRINCIPAL  -->
-        <section class="container">
-            <div class="box1">
-                <h1>CV NodeJs Web Site</h1>
-                <p>CV NodeJs es un sitio web creado con la firme inteción de volcar los conocimientos adquiridos sobre
-                    desarrollo web y a la vez como medio de difusión para que las empresas de software que quieran
-                    contratar personal tengan conocimiento de mi curriculum vitae.</p>
-                <p>CV NodeJs asi como su logo fue inspirado en el entorno <a href="https://es.wikipedia.org/wiki/Node.js">
-                        NodeJs</a>. Las razones por las que se le eligio son:</p>
-                <ul>
-                    <li>Permite el uso de Javascript en en el backend.</li>
-                    <li>Ejecucion asincronica de las tareas.</li>
-                    <li>Baja curva de aprendisaje.</li>
-                </ul>
-                <p>Las otras tecnologías que se estan usando son:</p>
-                <ul>
-                    <li><a href="https://www.heroku.com/">HEROKU </a>como hosting web.</li>
-                    <li><a href="https://github.com/">GITHUB </a>para control de versiones.</li>
-                    <li>HTML5, CSS3 y Javascript para el frontend.</li>
-                </ul>
-            </div>
-            <div class="box2">
-                <img src="/public/img/logo.png" alt="logo">
-            </div>
-        </section>
-
-    </main>
-    <footer>
-        <!-- FOOTER -->
-        <!-- <p>Daniel Amilcar Chungara Ruiz.</p>      -->
-        <a href="https://github.com/danielchungara1/cv-nodejs">
-            <div id="icon-github"></div>
-        </a>
-        <a href="#">
-            <div id="icon-facebook"></div>
-        </a>
-        <a href="#">
-            <div id="icon-linkedin"></div>
-        </a>
-        <a href="#">
-            <div id="icon-google"></div>
-        </a>
-        <a href="#">
-            <div id="icon-twiter"></div>
-        </a>
-        <a href="#">
-            <div id="icon-youtube"></div>
-        </a>
-
-    </footer>
+    <script>includeHTML();</script>
 </body>
 
 </html>
