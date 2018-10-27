@@ -1,6 +1,6 @@
 /* 
-*Color fondo azul: #131A22
-*Color verde: #90C53F
+*Color fondo azul: #131A22 
+*Color verde: #90C53F (144,197,63)
 */
 *{
     box-sizing: border-box;
@@ -10,6 +10,7 @@ body,html{
     margin :0;
     padding:0;
     height: 100%;
+
 }
 header,nav,footer{
     background-color: #131A22;
@@ -17,18 +18,19 @@ header,nav,footer{
     color: white;
 }
 .carusel{
-    height: 20em;
+    height: 18em;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url("/public/img/cv-lupa.jpg");    
-    background-size: contain;
+    background-size: cover;
     color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 95%;
+    margin: 0 auto;
 }
-main{
-    padding: 1em;
-    text-align: center;
-}
+
 
 header{
     display: flex;
@@ -66,7 +68,10 @@ nav{
     justify-content: stretch;
     
 }
-nav > a:link,a:visited,a:hover,a:active{
+nav > a:link,
+nav > a:visited,
+nav > a:hover,
+nav > a:active{
     color: white;
     text-decoration: none;    
 }
@@ -77,4 +82,80 @@ nav > a:hover{
 
 nav > a{
     padding: 1em;    
+}
+
+main{    
+    width: 70%;
+    margin: 0.25em auto;   
+}
+main > h1{
+    text-align: center;
+}
+
+
+footer{
+ text-align: center;
+ padding: 0.5em;
+}
+
+#icon-facebook, #icon-google, #icon-linkedin,#icon-twiter, #icon-youtube{
+    background-image: url("/public/img/sprite-social-media.png");
+        width: 30px;
+        height: 30px;        
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        background-size: 350px;
+        display: inline-block;
+        border: solid 1px grey;
+    
+        
+}
+#icon-google{
+    background-position-x: -95px ;
+}
+#icon-linkedin{
+    background-position-x: -128px ;
+}
+#icon-twiter{
+    background-position-x: -255px ;
+}
+#icon-youtube{
+    background-position-x: -320px ;
+}
+
+main{
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgba(200, 200, 200, 0.25);
+    padding: 1em;
+}
+
+main > .container{
+    display: flex;
+
+}
+
+main > .container > .box1{
+    flex: 50%;
+    padding: 1em;
+    border-right: none;
+    font-size: 1.2em;
+    line-height: 1.15em;
+}
+main > .container > .box1 > p{
+ 
+    text-align: justify;
+}
+
+main > .container > .box2{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+}
+main > .container img{
+    width: 200px;
+    
+    
 }
