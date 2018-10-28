@@ -1,0 +1,29 @@
+
+   main > .carusel{
+    background-image: url("/public/img/educacion.jpg"); 
+    background-size: cover;    
+
+}
+
+main .container img{
+    max-width: 120px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.box1{
+    width: 750px;
+}
+
+h1{
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0;
+}

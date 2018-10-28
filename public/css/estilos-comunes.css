@@ -136,16 +136,20 @@ main > .carusel{
     main>.container {
         display: flex;
         padding: 1em;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+        align-content: center;
 
 
     }
 
     main>.container>.box1 {
-        flex: 50%;
         padding: 1em;
         border-right: none;
         font-size: 1.2em;
         line-height: 1.15em;
+        max-width: 35em;
     }
 
     main>.container>.box1>p {
@@ -153,11 +157,17 @@ main > .carusel{
         text-align: justify;
     }
 
+    main>.container>.box1 li {
+
+        line-height: 1.5em;
+    }
+
     main>.container>.box2 {
-        flex: 50%;
+
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 1em;
 
     }
 

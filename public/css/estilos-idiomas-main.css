@@ -1,0 +1,10 @@
+
+   main > .carusel{
+    background-image: url("/public/img/idiomas.jpg"); 
+    background-size: cover;    
+}
+
+.box2 img{
+    width: 120px;
+
+}
