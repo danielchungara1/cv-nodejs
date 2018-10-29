@@ -190,9 +190,9 @@ main > .carusel{
             ;
         }
 
-        main>.container>.box2 {
+        /* main>.container>.box2 {
             display: none;
-        }
+        } */
 
         main>.container>.box1 {
             width: 100%;    
