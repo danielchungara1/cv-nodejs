@@ -19,12 +19,8 @@
 <body ng-app="app" ng-controller="controller">
 
     <!-- header include -->
-    <!-- <div w3-include-html="/public/html/comun/header.html"></div> -->
     <header>
         <!-- LOGO Y BUSQUEDA -->
-        <!-- <a href="/index.html">
-            <img src="/public/img/logo-claro.png" alt="logo"/>
-        </a> -->
         <img src="/public/img/logo-claro.png"  ng-click = "loadhtml('/public/html/index-main.html')" alt="logo"/>
         <form action="">
             <input type="text" class="cuadro-busqueda"/>
@@ -34,18 +30,8 @@
 
     
     <!-- nav include -->
-    <!-- <div w3-include-html="/public/html/comun/nav.html"></div> -->
     <nav>
         <!-- BARRA NAVEGACION -->
-        
-        <!-- <a href="/public/html/personal.html">Personal</a>                
-        <a href="/public/html/educacion.html">Educacion</a>
-        <a href="/public/html/experiencia.html">Experiencia</a>
-        <a href="/public/html/idiomas.html">Idiomas</a>
-        <a href="/public/html/herramientas.html">Herramientas</a>
-        <a href="/public/html/objetivos.html">Objetivos</a>
-        <a href="/public/html/projectos.html">Projectos</a> -->
-
         <button ng-click="loadhtml('/public/html/personal-main.html')">Personal</button>
         <button ng-click="loadhtml('/public/html/educacion-main.html')">Educacion</button>
         <button ng-click="loadhtml('/public/html/experiencia-main.html')">Experiencia</button>
@@ -56,8 +42,6 @@
     </nav>
 
     <!-- main  include -->
-    <!-- <div w3-include-html="/public/html/index-main.html"></div> -->
-
     <div ng-bind-html="mainhtml"></div>
 
 

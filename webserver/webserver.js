@@ -27,7 +27,7 @@ modulehttp.createServer(function(req, res){
         modulefs.readFile(patharchivo, function(err, data){
             if (err){
                 res.writeHead(400);
-                return res.end("RECURSO NO ENCONTRADO");
+                return res.end("<h1>RECURSO NO ENCONTRADO</h1>");
             };            
             res.writeHead(200);
             res.write(data);
