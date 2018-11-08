@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="/public/css/estilos-comunes.css">
     
 
-    <script src="/public/js/include-html.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="/public/js/contoller.js"></script>
 
@@ -19,36 +17,20 @@
 <body ng-app="app" ng-controller="controller">
 
     <!-- header include -->
-    <header>
-        <!-- LOGO Y BUSQUEDA -->
-        <img src="/public/img/logo-claro.png"  ng-click = "loadhtml('/public/html/index-main.html')" alt="logo"/>
-        <form action="">
-            <input type="text" class="cuadro-busqueda"/>
-            <input type="submit" value="search" class="submit"/>
-        </form>
-    </header>
+    <div ng-include="'/public/html/comun/header.html'"></div>
 
     
     <!-- nav include -->
-    <nav>
-        <!-- BARRA NAVEGACION -->
-        <button ng-click="loadhtml('/public/html/personal-main.html')">Personal</button>
-        <button ng-click="loadhtml('/public/html/educacion-main.html')">Educacion</button>
-        <button ng-click="loadhtml('/public/html/experiencia-main.html')">Experiencia</button>
-        <button ng-click="loadhtml('/public/html/idiomas-main.html')">Idiomas</button>
-        <button ng-click="loadhtml('/public/html/herramientas-main.html')">Herramientas</button>
-        <button ng-click="loadhtml('/public/html/objetivos-main.html')">Objetivos</button>
-        <button ng-click="loadhtml('/public/html/projectos-main.html')">Projectos</button>
-    </nav>
+    <div ng-include="'/public/html/comun/nav.html'"></div>
 
     <!-- main  include -->
     <div ng-bind-html="mainhtml"></div>
 
 
     <!-- footer include -->
-    <div w3-include-html="/public/html/comun/footer.html"></div>
+    <div ng-include="'/public/html/comun/footer.html'"></div>
 
-    <script>includeHTML();</script>
+
 </body>
 
 </html>
