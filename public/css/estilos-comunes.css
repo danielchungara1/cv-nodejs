@@ -30,6 +30,7 @@ header  img{
     width: 3em;
     cursor: pointer;
 }
+
 header >form{
     padding: 1em;
     width: 100%;   
@@ -57,13 +58,16 @@ nav{
     flex-wrap: wrap;
     
 }
-/* nav > a:link,
-nav > a:visited,
-nav > a:hover,
-nav > a:active{
+nav > a{
     color: white;
     text-decoration: none;    
 }
+
+nav > a.link-active{
+    background-color: #90C53F;
+    color: #131A22;
+}
+
 nav > a:hover{
     background-color: #90C53F;
     color: #131A22;
@@ -72,7 +76,8 @@ nav > a:hover{
 nav > a{
     padding: 1em;    
 }
- */
+
+
 
  nav > button:hover{
     background-color: #90C53F;
@@ -203,10 +208,6 @@ main > .carusel{
             width: 100%;
             ;
         }
-
-        /* main>.container>.box2 {
-            display: none;
-        } */
 
         main>.container>.box1 {
             width: 100%;    
