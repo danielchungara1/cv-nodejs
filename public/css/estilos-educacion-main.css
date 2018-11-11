@@ -1,13 +1,10 @@
-
+/* 
    main > .carusel{
     background-image: url("/public/img/educacion-comprimido.jpg"); 
     background-size: cover;    
 
-}
+} */
 
-main .container img{
-    max-width: 120px;
-}
 
 .container{
     display: flex;

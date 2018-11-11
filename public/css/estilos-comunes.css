@@ -92,54 +92,19 @@ nav > a{
      cursor: pointer;
  }
 
-footer{
- text-align: center;
- padding: 0.5em;
-}
 
-#icon-facebook, #icon-google, #icon-linkedin,#icon-twiter, #icon-youtube,#icon-github{
-    background-image: url("/public/img/sprite-social-media.png");
-        width: 30px;
-        height: 30px;        
-        background-position-y: 0;
-        background-repeat: no-repeat;
-        background-size: 350px;
-        display: inline-block;
-        border: solid 1px grey;
-    
-        
-}
-#icon-google{
-    background-position-x: -95px ;
-}
-#icon-linkedin{
-    background-position-x: -128px ;
-}
-#icon-twiter{
-    background-position-x: -255px ;
-}
-#icon-youtube{
-    background-position-x: -320px ;
-}
-#icon-github{
-    background-image: url("/public/img/git-logo-grey.png");
-     background-size: 16px;
-    background-position: center center;
-    
-}
-
-main > .carusel{
+main .carusel img{
     height: 18em;
+    width: 100%;
     display: flex;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
-/*     background-image: url("/public/img/cv-lupa.jpg");    */ 
-    background-size: cover;
+    object-fit: cover;
     color: transparent;
     background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    margin: 0 auto;
+    background-repeat: no-repeat;    
+    
 }
 
     main>h1 {
@@ -195,6 +160,52 @@ main > .carusel{
 
 
     }
+
+    footer{
+        text-align: center;
+        padding: 0.5em;
+        
+       }
+    footer *{
+        text-decoration: none;
+    }
+    footer img{
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+    }
+       
+    /* #icon-facebook, #icon-google, #icon-linkedin,#icon-twiter, #icon-youtube,#icon-github{
+        background-image: url("/public/img/sprite-social-media.png");
+            width: 30px;
+            height: 30px;        
+            background-position-y: 0;
+            background-repeat: no-repeat;
+            background-size: 350px;
+            display: inline-block;
+            border: solid 1px grey;
+        
+            
+    }
+    #icon-google{
+        background-position-x: -95px ;
+    }
+    #icon-linkedin{
+        background-position-x: -128px ;
+    }
+    #icon-twiter{
+        background-position-x: -255px ;
+    }
+    #icon-youtube{
+        background-position-x: -320px ;
+    }
+    #icon-github{
+        background-image: url("/public/img/git-logo-grey.png");
+        background-size: 16px;
+        background-position: center center;
+        
+    } */
+       
 
     /* Responsive pantallas baja resolucion*/
 
