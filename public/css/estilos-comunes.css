@@ -209,7 +209,7 @@ main .carusel img{
 
     /* Responsive pantallas baja resolucion*/
 
-    @media (min-width: 240px) and (max-width: 768px) {
+    @media (min-width: 240px) and (max-width: 960px) {
         main>.container {
             flex-direction: column-reverse;
 
